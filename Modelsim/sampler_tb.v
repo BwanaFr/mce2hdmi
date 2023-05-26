@@ -12,6 +12,15 @@ module sampler_tb ();
     wire blue;            //Blue
     wire px_clock;      //Pixel clock
     
+wire [3:0] signals;
+
+assign signals[0] = red;
+assign signals[1] = green;
+assign signals[2] = blue;
+assign signals[3] = intensity;
+
+wire [3:0] data_out;
+
 cga_gen_tb cga (
     .hs(hs),
     .vs(vs),
@@ -22,10 +31,10 @@ cga_gen_tb cga (
     .pixel_clk(px_clock)
 );
 
-sampler dut (
+sampler #( .NB_CHANNELS(4)) dut (
     .clk(fpga_clk),
     .reset(rst),
-    .data_in(red),
+    .data_in(signals),
     .data_out(data_out),
     .data_valid(data_valid)
 );

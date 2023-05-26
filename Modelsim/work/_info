@@ -9,47 +9,99 @@ z2
 cModel Technology
 Z0 dC:/Temp/toto
 T_opt
-!s110 1683634851
-VTlYaghDIFFid=EdFZ20RO0
-04 10 4 work sampler_tb fast 0
-=1-9c7bef38567d-645a3aa3-2a5-7e5c
+!s110 1685109836
+VSPSNnz?f2gDlSXEIoc=Ei3
+04 10 4 work cga_gen_tb fast 0
+=5-9c7bef38567d-6470bc4b-3b3-1bdc
 Z1 o-quiet -auto_acc_if_foreign -work work +acc
 Z2 tCvgOpt 0
 n@_opt
 Z3 OL;O;10.7;67
 R0
 T_opt1
-!s110 1683642869
-VT^LO>]BjEZTNN2iCm3zV13
+!s110 1685090424
+VlXXR938PCj=omCbL<gTK;1
 04 14 4 work sync_detect_tb fast 0
-=15-9c7bef38567d-645a59f5-335-4e74
+=5-9c7bef38567d-64707078-2e2-42a0
 R1
 R2
 n@_opt1
 R3
-vcga_gen
-!s110 1683638382
+R0
+T_opt2
+!s110 1685112819
+V]=k_gf7L7CD@jE[RGiRKX1
+04 10 4 work cga_acq_tb fast 0
+=3-9c7bef38567d-6470c7f3-358-4af8
+R1
+R2
+n@_opt2
+R3
+vcga_acq
+!s110 1685108516
 !i10b 1
-!s100 Jl3kSM]@C9V1XJRj5YTVZ3
-I3@Y5:dmCzo`TPK>ZdcIJ23
+!s100 cZ8L3VL:jj@eDG0j73^VH0
+IbD6W@Fg93K2=J78VbfJNP3
 Z4 VDg1SIo80bB@j0V0VzS_@n1
 Z5 dC:/Temp/MCE2HDMI/Modelsim
-w1683638246
-8C:/Temp/MCE2HDMI/Sources/cga_gen.v
-FC:/Temp/MCE2HDMI/Sources/cga_gen.v
-L0 2
+w1685108511
+8C:/Temp/MCE2HDMI/Sources/cga_acq.v
+FC:/Temp/MCE2HDMI/Sources/cga_acq.v
+L0 6
 Z6 OL;L;10.7;67
 r1
 !s85 0
 31
-Z7 !s108 1683638382.000000
+!s108 1685108516.000000
+!s107 C:/Temp/MCE2HDMI/Sources/cga_acq.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Temp/MCE2HDMI/Sources/cga_acq.v|
+!i113 0
+Z7 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+vcga_acq_tb
+!s110 1685112810
+!i10b 1
+!s100 nWQ1DK0QKbB8`@N>mTDgn2
+I7mS<o6LG<m7RjPm[:MSXP1
+R4
+R5
+w1685112801
+8C:/Temp/MCE2HDMI/Modelsim/cga_acq_tb.v
+FC:/Temp/MCE2HDMI/Modelsim/cga_acq_tb.v
+L0 4
+R6
+r1
+!s85 0
+31
+!s108 1685112810.000000
+!s107 C:/Temp/MCE2HDMI/Modelsim/cga_acq_tb.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Temp/MCE2HDMI/Modelsim/cga_acq_tb.v|
+!i113 0
+R7
+R2
+vcga_gen
+!s110 1685109831
+!i10b 1
+!s100 cEXYAjL8EXXkYJ_chLicN1
+IMokb=Uz<Fj:>EdiKXlmbf3
+R4
+R5
+w1685109819
+8C:/Temp/MCE2HDMI/Sources/cga_gen.v
+FC:/Temp/MCE2HDMI/Sources/cga_gen.v
+L0 2
+R6
+r1
+!s85 0
+31
+!s108 1685109831.000000
 !s107 C:/Temp/MCE2HDMI/Sources/cga_gen.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Temp/MCE2HDMI/Sources/cga_gen.v|
 !i113 0
-Z8 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R7
 R2
 vcga_gen_tb
-Z9 !s110 1683638383
+!s110 1685108537
 !i10b 1
 !s100 _?:[M3h5X:UP^CEL6<b<n1
 I2B`[V7XeX]6e09V>lS:mG1
@@ -63,83 +115,104 @@ R6
 r1
 !s85 0
 31
-Z10 !s108 1683638383.000000
+!s108 1685108537.000000
 !s107 C:/Temp/MCE2HDMI/Modelsim/cga_gen_tb.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Temp/MCE2HDMI/Modelsim/cga_gen_tb.v|
 !i113 0
-R8
+R7
 R2
 vsampler
-R9
+Z8 !s110 1685087688
 !i10b 1
-!s100 zFaOfTHi9?G0[4bik9F;k0
-ITcTaWQMSmCXan7T:G8j[H0
+!s100 4_`z4o`<lYAbO=R]XkYh13
+Io8[h>EGigbNnK`NEHzmBR3
 R4
 R5
-w1683535429
-8C:/Temp/MCE2HDMI/Sources/sampler.v
-FC:/Temp/MCE2HDMI/Sources/sampler.v
-L0 2
+Z9 w1683706488
+Z10 8C:/Temp/MCE2HDMI/Sources/sampler.v
+Z11 FC:/Temp/MCE2HDMI/Sources/sampler.v
+L0 46
 R6
 r1
 !s85 0
 31
-R7
-!s107 C:/Temp/MCE2HDMI/Sources/sampler.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Temp/MCE2HDMI/Sources/sampler.v|
+Z12 !s108 1685087688.000000
+Z13 !s107 C:/Temp/MCE2HDMI/Sources/sampler.v|
+Z14 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Temp/MCE2HDMI/Sources/sampler.v|
 !i113 0
-R8
+R7
 R2
-vsampler_tb
-R9
+vsampler_signal
+R8
 !i10b 1
-!s100 SR3^hO_Mkd>TDVO[jd>LM0
-IY[8QOWGNAki2e;_DMBV0C0
+!s100 [4fmie=W96j6PnRQRPE1D2
+IlfUCUI45;OmI6nC=:dB6C2
 R4
 R5
-w1683635310
-8C:\Temp\MCE2HDMI\Modelsim\sampler_tb.v
-FC:\Temp\MCE2HDMI\Modelsim\sampler_tb.v
+R9
+R10
+R11
 L0 3
 R6
 r1
 !s85 0
 31
-R10
-!s107 C:\Temp\MCE2HDMI\Modelsim\sampler_tb.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:\Temp\MCE2HDMI\Modelsim\sampler_tb.v|
+R12
+R13
+R14
 !i113 0
-R8
+R7
 R2
-vsync_detect
-!s110 1683642862
+vsampler_tb
+!s110 1685087689
 !i10b 1
-!s100 Y:_ZXN>LW`LW@36SHB<TT2
-ISXJ006_XUiig_n2GD]GSW3
+!s100 3eAHA^gRJkhk4N1l_m3G>0
+Ic`?5R6`fLl^AH:lRP:IS51
 R4
 R5
-w1683642856
-Z11 8C:/Temp/MCE2HDMI/Sources/sync_detect.v
-Z12 FC:/Temp/MCE2HDMI/Sources/sync_detect.v
-L0 6
+w1683707043
+8C:/Temp/MCE2HDMI/Modelsim/sampler_tb.v
+FC:/Temp/MCE2HDMI/Modelsim/sampler_tb.v
+L0 3
 R6
 r1
 !s85 0
 31
-!s108 1683642862.000000
-Z13 !s107 C:/Temp/MCE2HDMI/Sources/sync_detect.v|
-Z14 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Temp/MCE2HDMI/Sources/sync_detect.v|
+!s108 1685087689.000000
+!s107 C:/Temp/MCE2HDMI/Modelsim/sampler_tb.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Temp/MCE2HDMI/Modelsim/sampler_tb.v|
 !i113 0
-R8
+R7
 R2
-vsync_detect_tb
-R9
+vsync_detect
+!s110 1685108519
 !i10b 1
-!s100 Dm46[Bo97jN3>O8HL4R^_1
-ISIDNRf:A8<1Y6;HI^dCa=1
+!s100 M_5J`S=5CWN?NfG;1JM;80
+I<`^hVZPbi;b3C=bfmN=CT2
 R4
 R5
-w1683638378
+w1685093347
+Z15 8C:/Temp/MCE2HDMI/Sources/sync_detect.v
+Z16 FC:/Temp/MCE2HDMI/Sources/sync_detect.v
+L0 10
+R6
+r1
+!s85 0
+31
+!s108 1685108519.000000
+Z17 !s107 C:/Temp/MCE2HDMI/Sources/sync_detect.v|
+Z18 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Temp/MCE2HDMI/Sources/sync_detect.v|
+!i113 0
+R7
+R2
+vsync_detect_tb
+!s110 1685090419
+!i10b 1
+!s100 Fnm6<CeDIDJm:Cg]2<X[P1
+I_GVaknEKRz4W0==5GW^>90
+R4
+R5
+w1685090361
 8C:/Temp/MCE2HDMI/Modelsim/sync_detect_tb.v
 FC:/Temp/MCE2HDMI/Modelsim/sync_detect_tb.v
 L0 3
@@ -147,11 +220,11 @@ R6
 r1
 !s85 0
 31
-R10
+!s108 1685090419.000000
 !s107 C:/Temp/MCE2HDMI/Modelsim/sync_detect_tb.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Temp/MCE2HDMI/Modelsim/sync_detect_tb.v|
 !i113 0
-R8
+R7
 R2
 vSyncDetect
 !s110 1683635687
@@ -161,17 +234,17 @@ IX]zJ63Q150Bed_:bT2j962
 R4
 R5
 w1674460093
-R11
-R12
+R15
+R16
 L0 6
 R6
 r1
 !s85 0
 31
 !s108 1683635687.000000
-R13
-R14
+R17
+R18
 !i113 0
-R8
+R7
 R2
 n@sync@detect

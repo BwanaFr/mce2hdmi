@@ -3,41 +3,70 @@
 module sync_detect_tb ();
     reg rst;
 
-    wire hs;            //Horizontal sync
-    wire vs;            //Vertical sync
-    wire intensity;      //Intensity
-    wire red;            //Red
-    wire green;          //Green
-    wire blue;            //Blue
-    wire px_clock;      //Pixel clock
+    reg hs;            //Horizontal sync
+    reg vs;            //Vertical sync
+    reg clk;           //FPGA clock
 
-    wire SyncOut;
-    wire SyncValid;
-    wire SyncPolarity;
+    wire hSyncOut;
+    wire vSyncOut;
+    wire syncOk;
 
-cga_gen_tb cga (
-    .hs(hs),
-    .vs(vs),
-    .intensity(intensity),
-    .red(red),
-    .green(green),
-    .blue(blue),
-    .pixel_clk(px_clock)
-);
+    integer i = 0;
+    integer j = 0;
 
-sync_detect #(.PULSE_SIZE_MIN(55), .PULSE_SIZE_MAX(60), .MAX_PERIOD(909)) dut (
-    .CLK(px_clock),
+sync_detect #(
+        .V_PULSE_SIZE_MIN(127260),
+        .V_PULSE_SIZE_MAX(129780),
+        .V_MAX_LINES(263),
+        .H_PULSE_SIZE_MIN(504),
+        .H_PULSE_SIZE_MAX(630),
+        .H_MAX_PERIOD(8190),
+        .V_POLARITY(1),
+        .H_POLARITY(1)
+    ) dut (
+    .CLK(clk),
     .nRST(rst),
-    .SyncIn(hs),
-    .SyncOut(SyncOut),
-    .SyncValid(SyncValid),
-    .SyncPolarity(SyncPolarity)
+    .vSyncIn(vs),
+    .hSyncIn(hs),
+    .vSyncOut(vSyncOut),
+    .hSyncOut(hSyncOut),
+    .syncOk(syncOk)
 );
 
 initial begin
    rst = 1'b0;
-   #10
+   #10;
    rst = 1'b1;
+end
+
+// VS generation
+initial begin
+    vs = 1'b0;
+    #20;
+    for (i = 0; i < 5; i = i + 1) begin
+        vs = 1'b1;
+        #1019000;
+        vs = 1'b0;
+        #15669330;
+    end
+end
+
+// HS generation
+initial begin
+    hs = 1'b0;
+    #10;
+    for (j = 0; j < 1800; j = j + 1) begin
+        hs = 1'b1;
+        #4410;
+        hs = 1'b0;
+        #59290;
+    end
+end
+
+//Clock generation
+initial begin
+     clk = 1'b0;
+     forever #3.96825 clk = ~clk;  //126 Mhz
 end
 
 endmodule

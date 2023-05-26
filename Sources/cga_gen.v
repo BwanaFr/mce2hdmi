@@ -1,17 +1,17 @@
 
 module cga_gen
 #(// Horizontal
-    parameter H_FRONT = 27, // Front porch
-    parameter H_SYNC  = 57, // Sync
-    parameter H_BACK  = 81, // Back porch
+    parameter H_FRONT = 98, // Front porch
+    parameter H_SYNC  = 63, // Sync
+    parameter H_BACK  = 110, // Back porch
     parameter H_ACT   = 640,// Active pixels
     parameter H_BLANK = H_FRONT+H_SYNC+H_BACK, // Total blanking
     parameter H_TOTAL = H_FRONT+H_SYNC+H_BACK+H_ACT, // Total length
 
     // Vertical
-    parameter V_FRONT = 20, // Front porch 
-    parameter V_SYNC  = 3,  // Sync
-    parameter V_BACK  = 40, // Back porch
+    parameter V_FRONT = 22, // Front porch 
+    parameter V_SYNC  = 16,  // Sync
+    parameter V_BACK  = 24, // Back porch
     parameter V_ACT   = 200,// Active lines
     parameter V_BLANK = V_FRONT+V_SYNC+V_BACK, // Total blanking
     parameter V_TOTAL = V_FRONT+V_SYNC+V_BACK+V_ACT // Total length

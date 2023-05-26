@@ -1,25 +1,47 @@
-C:/Temp/MCE2HDMI/Modelsim/sync_detect_tb.v {1 {vlog -work work -vopt -stats=none C:/Temp/MCE2HDMI/Modelsim/sync_detect_tb.v
-Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
--- Compiling module sync_detect_tb
-
-Top level modules:
-	sync_detect_tb
-
-} {} {}} C:/Temp/MCE2HDMI/Sources/cga_gen.v {1 {vlog -work work -vopt -stats=none C:/Temp/MCE2HDMI/Sources/cga_gen.v
+C:/Temp/MCE2HDMI/Sources/cga_gen.v {1 {vlog -work work -vopt -stats=none C:/Temp/MCE2HDMI/Sources/cga_gen.v
 Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
 -- Compiling module cga_gen
 
 Top level modules:
 	cga_gen
 
+} {} {}} C:/Temp/MCE2HDMI/Modelsim/sync_detect_tb.v {1 {vlog -work work -vopt -stats=none C:/Temp/MCE2HDMI/Modelsim/sync_detect_tb.v
+Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+-- Compiling module sync_detect_tb
+
+Top level modules:
+	sync_detect_tb
+
 } {} {}} C:/Temp/MCE2HDMI/Sources/sampler.v {1 {vlog -work work -vopt -stats=none C:/Temp/MCE2HDMI/Sources/sampler.v
 Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+-- Compiling module sampler_signal
 -- Compiling module sampler
 
 Top level modules:
 	sampler
 
-} {} {}} C:/Temp/MCE2HDMI/Modelsim/sampler_tb.v {1 {vlog -work work -vopt -stats=none {C:\Temp\MCE2HDMI\Modelsim\sampler_tb.v}
+} {} {}} C:/Temp/MCE2HDMI/Sources/sync_detect.v {1 {vlog -work work -vopt -stats=none C:/Temp/MCE2HDMI/Sources/sync_detect.v
+Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+-- Compiling module sync_detect
+
+Top level modules:
+	sync_detect
+
+} {} {}} C:/Temp/MCE2HDMI/Modelsim/cga_acq_tb.v {1 {vlog -work work -vopt -stats=none C:/Temp/MCE2HDMI/Modelsim/cga_acq_tb.v
+Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+-- Compiling module cga_acq_tb
+
+Top level modules:
+	cga_acq_tb
+
+} {} {}} C:/Temp/MCE2HDMI/Sources/cga_acq.v {1 {vlog -work work -vopt -stats=none C:/Temp/MCE2HDMI/Sources/cga_acq.v
+Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+-- Compiling module cga_acq
+
+Top level modules:
+	cga_acq
+
+} {} {}} C:/Temp/MCE2HDMI/Modelsim/sampler_tb.v {1 {vlog -work work -vopt -stats=none C:/Temp/MCE2HDMI/Modelsim/sampler_tb.v
 Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
 -- Compiling module sampler_tb
 
